@@ -1472,9 +1472,12 @@ class ArchiveThread(QThread, BaseEncodingClass):
     def decode_numbers(self, encoded_string):
         return self.parent.decode_numbers(encoded_string) if self.parent else super().decode_numbers(encoded_string)
 
-if __name__ == "__main__":
+def main():
     check_folder_file()
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()
