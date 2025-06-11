@@ -1421,8 +1421,7 @@ class ArchiveThread(QThread, BaseEncodingClass):
                             except:
                                 raise Exception("Неверный ключ")
                         
-                        self.status_signal.emit("⌛ Распаковка архива...")
-                        
+                        self.status_signal.emit("⌛ Распаковка архива...")                    
                         # Определяем путь для распаковки
                         if len(file_list) > 1:
                             # Создаем папку с именем архива (без .cp)
