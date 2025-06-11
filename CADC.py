@@ -18,7 +18,6 @@ import shutil
 
 def get_application_path():
     if getattr(sys, 'frozen', False):
-        # Если приложение скомпилировано в .exe
         application_path = Path(sys.executable).parent
     else:
         # Если запущен как .py файл
