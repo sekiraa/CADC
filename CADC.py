@@ -18,9 +18,6 @@ import shutil
 
 def get_application_path():
     return Path(os.environ.get("RUN_CADC_PATH", ""))
-
-# Пример использования:
-print(get_application_path())
   
 directory_path = get_application_path()
 folder_path = directory_path / "list_CADC"
