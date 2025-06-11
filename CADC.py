@@ -20,7 +20,6 @@ def get_application_path():
     if getattr(sys, 'frozen', False):
         application_path = Path(sys.executable).parent
     else:
-        # Если запущен как .py файл
         application_path = Path(__file__).resolve().parent
     return application_path
 
