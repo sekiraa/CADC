@@ -75,7 +75,7 @@ class BaseEncodingClass:
             if pair in self.encoding_map:
                 result.append(self.encoding_map[pair])
             else:
-                result.append('??')  # Явное обозначение ошибки
+                result.append('??')
         
         return ''.join(result)
 
