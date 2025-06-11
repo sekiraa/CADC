@@ -17,7 +17,6 @@ import pyzipper
 import shutil
 
 def get_application_path():
-    """Определяет путь к директории приложения для обоих случаев - .py и .exe"""
     if getattr(sys, 'frozen', False):
         # Если приложение скомпилировано в .exe
         application_path = Path(sys.executable).parent
