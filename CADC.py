@@ -23,7 +23,7 @@ def get_application_path():
         application_path = Path(__file__).resolve().parent
     return application_path
 
-# Определяем пут
+# Определяем пу
 directory_path = get_application_path()
 folder_path = directory_path / "list_CADC"
 
