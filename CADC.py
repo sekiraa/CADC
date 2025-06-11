@@ -66,7 +66,6 @@ class BaseEncodingClass:
         }
 
     def encode_numbers(self, number_string):
-        # Добавляем ведущий ноль для нечетной длины
         if len(number_string) % 2 != 0:
             number_string = '0' + number_string
             
