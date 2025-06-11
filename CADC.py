@@ -1309,7 +1309,7 @@ class ArchiveThread(QThread, BaseEncodingClass):
                 zipf.setpassword(str(self.public_key).encode())
                 zipf.setencryption(pyzipper.WZ_AES, nbits=256)
                 
-                if os.path.isfi.Эle(self.selected_path):
+                if os.path.isfile(self.selected_path):
                     self.status_signal.emit(f"⌛ Добавление файла {os.path.basename(self.selected_path)}...")
                     arcname = os.path.basename(self.selected_path)
                     zipf.write(self.selected_path, arcname)
