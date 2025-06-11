@@ -1029,7 +1029,7 @@ class FileViewer(QWidget, BaseEncodingClass):
         self.all_clear_button.hide()
         
         # Заменяем обычный QLabel на ScrollingLabel
-        self.label_status = ScrollingLabel("⏳ Ожидается амприодействие")
+        self.label_status = ScrollingLabel("⏳ Ожидается")
         self.label_status.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_status.setFixedSize(378, 25)
         
