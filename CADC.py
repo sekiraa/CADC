@@ -30,7 +30,7 @@ def check_folder_file():
         except Exception as e:
             pass
     return folder_path
-  
+
 class BaseEncodingClass:
     def generate_encoding_map(self):
         return {
