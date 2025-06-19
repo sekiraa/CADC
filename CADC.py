@@ -18,7 +18,7 @@ import shutil
 
 def get_application_path():
     return Path(os.environ.get("RUN_CADC_PATH", ""))
-  
+
 directory_path = get_application_path()
 folder_path = directory_path / "list_CADC"
 
@@ -1024,7 +1024,7 @@ class FileViewer(QWidget, BaseEncodingClass):
         self.all_clear_button.hide()
         
         # Заменяем обычный QLabel на ScrollingLabel
-        self.label_status = ScrollingLabel("⏳ Ож!")
+        self.label_status = ScrollingLabel("⏳ Ожидание действий!")
         self.label_status.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_status.setFixedSize(378, 25)
         
