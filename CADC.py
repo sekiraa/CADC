@@ -23,7 +23,7 @@ directory_path = get_application_path()
 folder_path = directory_path / "list_CADC"
 
 def check_folder_file():
-    """Проверяет и создает необходимую директорию"""
+
     if not folder_path.is_dir():
         try:
             folder_path.mkdir(parents=True, exist_ok=True)
