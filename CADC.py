@@ -20,7 +20,7 @@ def get_application_path():
     return Path(os.environ.get("RUN_CADC_PATH", ""))
 
 directory_path = get_application_path()
-folder_path = directory_path / "list_CADC"
+folder_path = directory_path / "list_CAD"
 
 def check_folder_file():
 
