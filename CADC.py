@@ -20,7 +20,7 @@ def get_application_path():
     return Path(os.environ.get("RUN_CADC_PATH", ""))
 
 directory_path = get_application_path()
-folder_path = directory_path / "list_CAD"
+folder_path = directory_path / "list_CADC"
 
 def check_folder_file():
 
@@ -1470,8 +1470,4 @@ def main():
     sys.exit(app.exec())
 
 if __name__ == "__main__":
-  if "--from-launcher" not in sys.argv:
-    QMessageBox.warning("Этот файл должен запускаться только через лаунчер!")
-    sys.exit(1)
-  else:
     main()
