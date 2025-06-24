@@ -15,7 +15,7 @@ import getpass
 import pyperclip
 import pyzipper
 import shutil
-
+import sys
 def get_application_path():
     return Path(os.environ.get("RUN_CADC_PATH", ""))
 
@@ -1470,4 +1470,8 @@ def main():
     sys.exit(app.exec())
 
 if __name__ == "__main__":
+  if "--from-launcher" not in sys.argv:
+    QMessageBox.warning("Этот файл должен запускаться только через лаунчер!")
+    sys.exit(1)
+  else:
     main()
