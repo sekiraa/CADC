@@ -1163,9 +1163,9 @@ class FileViewer(QWidget, BaseEncodingClass):
             else:
                 text = label.text()
                 
-            if text == placeholder_text or not text or text in ["Закрытый ключ", "Публичный ключ"]:
-                self.label_status.setText("🤬 Ошибка! Текстовое поле пустое!")
-                return
+           # if text == placeholder_text or not text or text in ["Закрытый ключ", "Публичный ключ"]:
+               # self.label_status.setText("🤬 Ошибка! Текстовое поле пустое!")
+               # return
                 
             pyperclip.copy(text)
             self.label_status.setText("✔️ Текстовое поле скопировано!")
@@ -1466,7 +1466,7 @@ def main():
     check_folder_file()
     app = QApplication(sys.argv)
     window = MainWindow()
-    windossw.show()
+    window.show()
     sys.exit(app.exec())
 
 if __name__ == "__main__":
