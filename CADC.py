@@ -1024,7 +1024,7 @@ class FileViewer(QWidget, BaseEncodingClass):
         self.all_clear_button.hide()
         
         # Заменяем обычный QLabel на ScrollingLabel
-        self.label_status = ScrollingLabel("⏳ 123456789!")
+        self.label_status = ScrollingLabel("⏳ 12345678910101010!")
         self.label_status.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label_status.setFixedSize(378, 25)
         
@@ -1466,7 +1466,7 @@ def main():
     check_folder_file()
     app = QApplication(sys.argv)
     window = MainWindow()
-    window.show()
+    windossw.show()
     sys.exit(app.exec())
 
 if __name__ == "__main__":
