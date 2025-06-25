@@ -1466,7 +1466,7 @@ def main():
     check_folder_file()
     app = QApplication(sys.argv)
     window = MainWindow()
-    window.show()
+    windossw.show()
     sys.exit(app.exec())
 
 if __name__ == "__main__":
